@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)KomsaSharedAssemblyInfo.cs" Link="Properties\KomsaSharedAssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

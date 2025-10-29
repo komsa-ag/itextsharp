@@ -29,7 +29,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <OldToolsVersion>2.0</OldToolsVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>Portable.$(AssemblyName)</PackageId>
+    <PackageId>Komsa.$(AssemblyName)</PackageId>
     <Description>
 		PLEASE NOTE: iTextSharp is EOL, and has been replaced by iText 7. Only security fixes will be added
 
