@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <!-- Own packages -->
+    <Version>5.5.13.6</Version>
+    <!-- Real packages -->
+    <SystemDrawingCommonPackageVersion>4.7.0</SystemDrawingCommonPackageVersion>
+    <SystemSecurityCryptographyXmlPackageVersion>4.7.0</SystemSecurityCryptographyXmlPackageVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <WithoutDrawing>true</WithoutDrawing>
+    <WithoutCryptographyXml>true</WithoutCryptographyXml>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <GenerateSpecifiedPackagesOnBuild>true</GenerateSpecifiedPackagesOnBuild>
+  </PropertyGroup>
+</Project>
