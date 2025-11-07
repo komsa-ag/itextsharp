@@ -137,9 +137,9 @@ namespace iTextSharp.text {
 	     */
         public static Version GetInstance() {
             lock (staticLock) {
-                if (version != null) {
-                    return version;
-                }
+                //if (version != null) {
+                    return version ?? new Version();
+                //}
             }
             Version localVersion = new Version();
             try {
