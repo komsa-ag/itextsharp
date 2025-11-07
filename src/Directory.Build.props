@@ -2,11 +2,13 @@
   <PropertyGroup>
     <!-- Own packages -->
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
-    <Version>5.5.13.6</Version>
+    <VersionPrefix>5.5.13.6</VersionPrefix>
+    <FileVersion>$(VersionPrefix)</FileVersion>
     <!-- Real packages -->
     <MicrosoftSourceLinkGitHubPackageVersion>8.0.0</MicrosoftSourceLinkGitHubPackageVersion>
-    <SystemDrawingCommonPackageVersion>4.7.0</SystemDrawingCommonPackageVersion>
-    <SystemSecurityCryptographyXmlPackageVersion>4.7.0</SystemSecurityCryptographyXmlPackageVersion>
+    <BouncyCastleCryptographyPackageVersion>2.5.1</BouncyCastleCryptographyPackageVersion>
+    <SystemDrawingCommonPackageVersion>8.0.13</SystemDrawingCommonPackageVersion>
+    <SystemSecurityCryptographyXmlPackageVersion>8.0.2</SystemSecurityCryptographyXmlPackageVersion>
   </PropertyGroup>
   <PropertyGroup>
     <WithoutDrawing>true</WithoutDrawing>

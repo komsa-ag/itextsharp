@@ -81,7 +81,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <DefineConstants Condition="$(WithoutDrawing) != 'true'">$(DefineConstants);DRAWING</DefineConstants>
-    <DefineConstants Condition="$(WithoutCryptographyXml) != 'true'">$(DefineConstants);CRYPTOGRAPHY_XML</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <None Include="itextsharp.snk" />

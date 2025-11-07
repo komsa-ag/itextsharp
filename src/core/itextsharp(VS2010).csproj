@@ -123,12 +123,11 @@ Several iText engineers are actively supporting the project on StackOverflow: ht
   </PropertyGroup>
   <PropertyGroup>
     <DefineConstants Condition="$(WithoutDrawing) != 'true'">$(DefineConstants);DRAWING</DefineConstants>
-    <DefineConstants Condition="$(WithoutCryptographyXml) != 'true'">$(DefineConstants);CRYPTOGRAPHY_XML</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="BouncyCastle.Cryptography" Version="2.5.1" />
-    <PackageReference Include="System.Drawing.Common" Version="8.0.13" />
-    <PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.2" />
+    <PackageReference Condition="$(WithoutDrawing) != 'true'" Include="System.Drawing.Common" Version="$(SystemDrawingCommonPackageVersion)" />
+    <PackageReference Include="BouncyCastle.Cryptography" Version="$(BouncyCastleCryptographyPackageVersion)" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="$(SystemSecurityCryptographyXmlPackageVersion)" />
   </ItemGroup>
   <ItemGroup>
     <None Include="itextsharp.snk" />
