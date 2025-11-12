@@ -2,7 +2,7 @@
   <PropertyGroup>
     <!-- Own packages -->
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
-    <VersionPrefix>5.5.13.6</VersionPrefix>
+    <VersionPrefix>5.5.13.7</VersionPrefix>
     <FileVersion>$(VersionPrefix)</FileVersion>
     <!-- Real packages -->
     <MicrosoftSourceLinkGitHubPackageVersion>8.0.0</MicrosoftSourceLinkGitHubPackageVersion>
